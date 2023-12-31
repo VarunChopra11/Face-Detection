@@ -1,0 +1,10 @@
+from gtts import gTTS
+from playsound import playsound
+
+def speak(text, language='en'):
+    tts = gTTS(text=text, lang=language, slow=False)
+    playsound(tts)
+
+# Example usage
+text_to_speak = "Hello, how are you today?"
+speak(text_to_speak)
