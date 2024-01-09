@@ -21,6 +21,12 @@ while True:
         for facelms in results.multi_face_landmarks:
             mpDraw.draw_landmarks(img, facelms, mpFaceMesh.FACEMESH_TESSELATION,
             drawSpec,drawSpec)
+            # Code Landmarks using this:
+            '''for id,lm in enumerate(facelms.landmark):
+                ih, iw, ic = img.shape
+                x,y = int(lm.x*iw), int(lm.y*ih)
+                if id in [109,338,477,1,5,10]:            #Add landmarks in this list to print their id and position.
+                    print(id,x,y)'''                      #This will print landmark's id,horizontal position,vertical position 
 
 
     cTime = time.time()
