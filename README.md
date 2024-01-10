@@ -1,6 +1,6 @@
 # Face-Detection
-Face Mesh Detection System By Varun Chopra,
-For Anxiety Disorder Classification System By HEALIX.
+Face Mesh Detection System By Varun Chopra.
+
 
 Python libraries required/used :
 1.) Opencv
